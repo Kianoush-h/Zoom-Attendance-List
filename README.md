@@ -57,9 +57,40 @@ Date = '01/10/2021' # mm/dd/yy
 
 
 
+This part is related to the browser visibility:
+
+```
+options = Options()
+# options.headless = True
+driver = webdriver.Firefox(options=options, executable_path='./geckodriver.exe')
+```
+
+You need to enable the "options.headless" if you want to run the code in the background.
 
 
 
+In the following example, we create a dictionary named switcher to store all the switch-like cases. We use the following part to find the month name to set it in the search section of the page.
+
+```
+def month_text(argument):
+    switcher = {
+        1: "January",
+        2: "February",
+        3: "March",
+        4: "April",
+        5: "May",
+        6: "June",
+        7: "July",
+        8: "August",
+        9: "September",
+        10: "October",
+        11: "November",
+        12: "December"
+    }
+	return switcher.get(argument, "Invalid month")
+```
+
+In the above example, when you pass an argument to the switch_demo function, it is looked up against the switcher dictionary mapping.
 
 
 
