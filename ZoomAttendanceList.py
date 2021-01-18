@@ -60,7 +60,7 @@ sleep(5)
 driver.find_element_by_xpath('/html/body/div[1]/div[3]/div[2]/div[3]/div[1]/div/div[1]/aside/ul/li[7]/a').click()
 driver.find_element_by_xpath('/html/body/div[1]/div[3]/div[2]/div[3]/div/div/div[2]/div[2]/div[3]/div/a[1]').click()
 
-sleep(5)
+sleep(2)
 from_box = driver.find_element_by_xpath('/html/body/div[1]/div[3]/div[2]/div[7]/div/div/div[2]/div[3]/div[3]/form/div/button[1]').click()
 
 
@@ -121,7 +121,7 @@ if from_box_month != month:
 
 
 
-sleep(2)
+sleep(1)
 
 day = False
 i = 1
@@ -137,12 +137,28 @@ while not day:
 
 search = driver.find_element_by_xpath('//*[@id="searchMyButton"]').click()
 
+parti = driver.find_element_by_xpath('/html/body/div[1]/div[3]/div[2]/div[7]/div/div/div[2]/div[3]/div[4]/div/div[1]/table/tbody/tr/td[12]/a').click()
 
 
+students = []
+end = False
+i = 1
 
+while not end:
+    try:
+        name = driver.find_element_by_xpath('/html/body/div[5]/div/div/div/div/div[2]/div[2]/table/tbody/tr['+str(i)+']/td[1]/div').text
+        students = students + [name]
+        i += 1
+    except:
+        end = True
+  
+        
+  
+for i in students:
+    print("student # name: " + i + '/n')
 
-
-
+        
+        
 
 
 
