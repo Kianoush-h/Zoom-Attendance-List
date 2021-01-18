@@ -90,12 +90,29 @@ def month_text(argument):
 	return switcher.get(argument, "Invalid month")
 ```
 
-In the above example, when you pass an argument to the switch_demo function, it is looked up against the switcher dictionary mapping.
 
 
+Furthermore, The following part find the month number:
 
-
-
+```
+def month_int(argument):
+    switcher = {
+        "January": 1,
+        "February": 2,
+        "March": 3,
+        "April": 4,
+        "May": 5,
+        "June": 6,
+        "July": 7,
+        "August": 8,
+        "September": 9,
+        "October": 10,
+        "November": 11,
+        "December": 12
+    }
+    # print (switcher.get(argument, "Invalid month"))
+    return switcher.get(argument, "Invalid month")
+```
 
 
 
