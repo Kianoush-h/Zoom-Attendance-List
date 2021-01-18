@@ -55,12 +55,12 @@ Password_input.send_keys(Password)
 
 Password_input.submit()
 
-
+sleep(5)
 
 driver.find_element_by_xpath('/html/body/div[1]/div[3]/div[2]/div[3]/div[1]/div/div[1]/aside/ul/li[7]/a').click()
 driver.find_element_by_xpath('/html/body/div[1]/div[3]/div[2]/div[3]/div/div/div[2]/div[2]/div[3]/div/a[1]').click()
 
-
+sleep(5)
 from_box = driver.find_element_by_xpath('/html/body/div[1]/div[3]/div[2]/div[7]/div/div/div[2]/div[3]/div[3]/form/div/button[1]').click()
 
 
@@ -110,7 +110,7 @@ month = month_text(month)
 
 from_box_month = driver.find_element_by_xpath('/html/body/div[3]/div[1]/div/span[1]').text
 
-while from_box_month != month:
+if from_box_month != month:
     f_month = month_int(from_box_month)
     target_month = month_int(month)
     while f_month != target_month:
@@ -118,18 +118,24 @@ while from_box_month != month:
             next_ = driver.find_element_by_xpath('/html/body/div[3]/div[1]/a[2]').click()
         else:
             pre = driver.find_element_by_xpath('/html/body/div[3]/div[1]/a[1]').click()
-    
-    from_box_month = driver.find_element_by_xpath('/html/body/div[3]/div[1]/div/span[1]').text
 
 
 
+sleep(2)
 
+day = False
+i = 1
+while not day:
+    # print(i)
+    try:
+        driver.find_element_by_xpath('/html/body/div[3]/table/tbody/tr[1]/td['+str(i)+']/a').click()
+        day = True
+    except:
+        i += 1
+        # sleep(1)
+        
 
-
-
-
-
-
+search = driver.find_element_by_xpath('//*[@id="searchMyButton"]').click()
 
 
 
