@@ -40,7 +40,20 @@ After you run the mentioned code in your console, it opens a browser page ( if y
  
  
 
+### Code Explanations
 
+You can enter the Username and the Password in the first part of the code:
+
+```
+LogInUrl = 'https://us04web.zoom.us/web/sso/login?en=signin'
+
+Company_Domain = 'concordia-ca'
+
+UserName = 'concordia.ca\K_HARATI'
+Password = '....'
+
+Date = '01/10/2021' # mm/dd/yy
+```
 
 
 

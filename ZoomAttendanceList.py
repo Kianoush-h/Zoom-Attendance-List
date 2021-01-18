@@ -21,7 +21,7 @@ LogInUrl = 'https://us04web.zoom.us/web/sso/login?en=signin'
 Company_Domain = 'concordia-ca'
 
 UserName = 'concordia.ca\K_HARATI'
-Password = 'KAmm@16973003'
+Password = '....'
 
 Date = '01/10/2021' # mm/dd/yy
 
