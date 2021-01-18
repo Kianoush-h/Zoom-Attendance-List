@@ -2,7 +2,7 @@
  You can use this project to create the attendance list automaticaly without calling the students names and wait until theu answer. Your username, password and the meeting date are the only things that this code requires from the user to create the attendance list automaticaly.
 
 
-![Zoom Attendance List](./etcs/sample.gif)
+![Zoom Attendance List](./etc/sample.gif)
 
 
 
