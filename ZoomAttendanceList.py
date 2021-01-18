@@ -85,7 +85,47 @@ def month_text(argument):
     # print (switcher.get(argument, "Invalid month"))
     return switcher.get(argument, "Invalid month")
 
+    
+def month_int(argument):
+    switcher = {
+        "January": 1,
+        "February": 2,
+        "March": 3,
+        "April": 4,
+        "May": 5,
+        "June": 6,
+        "July": 7,
+        "August": 8,
+        "September": 9,
+        "October": 10,
+        "November": 11,
+        "December": 12
+    }
+    # print (switcher.get(argument, "Invalid month"))
+    return switcher.get(argument, "Invalid month")
+
+
 month = month_text(month)
+
+
+from_box_month = driver.find_element_by_xpath('/html/body/div[3]/div[1]/div/span[1]').text
+
+while from_box_month != month:
+    f_month = month_int(from_box_month)
+    target_month = month_int(month)
+    while f_month != target_month:
+        if f_month > target_month:
+            next_ = driver.find_element_by_xpath('/html/body/div[3]/div[1]/a[2]').click()
+        else:
+            pre = driver.find_element_by_xpath('/html/body/div[3]/div[1]/a[1]').click()
+    
+    from_box_month = driver.find_element_by_xpath('/html/body/div[3]/div[1]/div/span[1]').text
+
+
+
+
+
+
 
 
 
