@@ -154,8 +154,8 @@ while not end:
   
         
   
-for i in students:
-    print("student # name: " + i + '/n')
+for i in range(len(students)):
+    print("student # "+str(i+1)+" name: " + students[i] )
 
         
         
