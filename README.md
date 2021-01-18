@@ -1,5 +1,5 @@
 # Zoom Attendance List
- You can use this project to create the attendance list automaticaly without calling the students names and wait until theu answer. Your username, password and the meeting date are the only things that this code requires from the user to create the attendance list automaticaly.
+ You can use this project to automatically create the attendance list without calling the student's names and waiting until they answer. Your username, password, and meeting date are the only things that this code requires from the user to create the attendance list automatically.
 
 
 ![Zoom Attendance List](./etc/sample.gif)
@@ -35,7 +35,7 @@ You can run the code with this:
 ```
 python3 ZoomAttendanceList.py
 ```
-After you run the mentioned code in your console, it opens a browser page ( if you do not want to see the brwoser you can change the code to run the process in the background) and after 10 seconds it shows the attendance list automaticaly.
+After you run the mentioned code in your console, it opens a browser page ( if you do not want to see the browser, you can change the code to run the process in the background), and after 10 seconds, it shows the attendance list automatically.
 
  
  
@@ -69,7 +69,7 @@ You need to enable the "options.headless" if you want to run the code in the bac
 
 
 
-In the following example, we create a dictionary named switcher to store all the switch-like cases. We use the following part to find the month name to set it in the search section of the page.
+In the following example, we create a dictionary named switcher to store all the switch-like cases. We use the following part to find the month name to set it in the page's search section.
 
 ```
 def month_text(argument):
@@ -120,9 +120,9 @@ def month_int(argument):
 
  
  # Future 
- You can use this project to create the attendance list automaticaly 
+ I plan to modify this code to create a CSV file and enter the student's names.
  
-Furthermore, I have a plan to modify this code to create different accounts in order to be able to like the video and subscribe to the channels.
+ Furthermore, I will modify the code to get the meeting's date and creates the attendance list after each meeting.
  
  
 
@@ -131,7 +131,7 @@ Furthermore, I have a plan to modify this code to create different accounts in o
 
 Email: haratiank2@gmail.com
 
-YouTube channel: https://www.youtube.com/channel/UCvf9_53f6n3YjNEA4NxAkJA?view_as=subscriber
+YouTube channel: https://www.youtube.com/channel/UCvf9_53f6n3YjNEA4NxAkJA
 
 GitHub: https://github.com/Kianoush-h
 
